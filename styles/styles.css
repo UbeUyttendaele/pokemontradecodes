@@ -1,0 +1,64 @@
+/* CSS file */
+#container{
+    width: 70%;
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-between;
+    flex-wrap: wrap
+}
+.card{
+    display: grid;
+    grid-template-areas:    "tone ttwo"
+                            "one two"
+                            "code code";
+    border-radius: 10px;
+    margin-bottom: 1rem;
+    width: 22vw;
+    background-color: LightGray;
+}
+.card a{
+    width: 80%;
+    text-align: center;
+    color:black;
+    font-size: 1.7vw;
+    overflow: hidden;
+    margin: auto;
+    
+}
+.card a img{
+    height: 80%;
+    width: 80%;
+    border-radius: 20px
+}
+
+.card a:nth-of-type(1) img {
+    grid-area: one;
+    background-color: rgb(158, 50, 50);
+}
+.card a:nth-of-type(2) img{
+    grid-area: two;
+    background-color: rgb(156, 43, 167);
+}
+.card p:nth-of-type(1){
+    grid-area: tone;
+    font-size: 1.7vw;
+    text-align: center;
+}
+.card p:nth-of-type(2){
+    grid-area: ttwo;
+    font-size: 1.7vw;
+    text-align: center;
+}
+span{
+    font-weight: bold;
+}
+.card p:last-child {
+    background-color: cadetblue;
+    color: white;
+    width: 50%;
+    margin: 10 auto;
+    text-align: center;
+    font-size: 1.5vw;
+    border-radius: 10px;
+    grid-area: code;
+}
